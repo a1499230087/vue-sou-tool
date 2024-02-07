@@ -1,4 +1,17 @@
-const { defineConfig } = require('@vue/cli-service')
+const {
+  defineConfig
+} = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  // 将 examples 目录添加为新的页面
+  pages: {
+    index: {
+      // page 的入口
+      entry: 'examples/main.ts',
+      // 模板来源
+      template: 'public/index.html',
+      // 输出文件名
+      filename: 'index.html'
+    }
+  }
 })

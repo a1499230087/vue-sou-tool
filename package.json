@@ -1,11 +1,20 @@
 {
-  "name": "vue-tool",
+  "name": "vue-sou-tool",
   "version": "0.1.0",
-  "private": true,
+  "description": "Vue2 工具包",
+  "author": "Soulock",
+  "license": "MIT",
+  "main": "lib/vue-sou-tool.umd.min.js",
+  "keywords": [
+    "vue",
+    "button"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-sou-tool --dest lib packages/index.ts"
   },
   "dependencies": {
     "core-js": "^3.8.3",

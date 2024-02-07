@@ -1,24 +1,17 @@
-# vue-tool
+# vue-sou-tool
 
-## Project setup
+## v-sou-file="change"
 ```
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-```
-pnpm run serve
+const change = (files?:FileList,target,el){
+    ###业务###
+}
+单文件上传 
 ```
 
-### Compiles and minifies for production
+## v-sou-file:multiple="change"
 ```
-pnpm run build
+const change = (files?:FileList,target,el){
+    ###业务###
+}
+多文件上传 
 ```
-
-### Lints and fixes files
-```
-pnpm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
